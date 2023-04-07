@@ -11,7 +11,579 @@
   position: fixed;
   z-index: 10;
   width:100%;
+  height:50px;*{
+  margin: 0;
+  padding: 0;
+}
+.fakeimg {
+  height: 200px;
+  background: #aaa;
+}
+
+.header{
+  position: fixed;
+  z-index: 10;
+  width:100%;
   height:50px;
+}
+
+.logo{
+  color: #000000;
+}
+
+#brand-name{
+  position: absolute;
+  left: 45px;
+  top: 15px;
+  font-family: Helvetica, sans-serif !important;
+  font-weight: bolder;
+  font-size: 22px;
+  letter-spacing: -1.5px;
+}
+
+.nav-links{
+  position: absolute;
+  height:100em;
+  width: 260px;
+  background-color: rgb(255, 255, 255);
+  padding-top: 100px;
+  padding-left: 0px;
+  top:0px;
+  left: 0px;
+  font-size: 20px;
+  font-weight: 600;
+  font-stretch: semi-condensed;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in;
+}
+.nav-active{
+  transform: translateX(0%);
+}
+.nav-links .nav-item{
+  color: rgb(0, 102, 255);
+  padding-bottom: 20px;
+}
+
+.active{
+  border-left: 4px solid black;
+}
+
+.download_button{
+  width:100px;
+  height:50px;
+background-image: url(images/google-play-badge.png);
+}
+
+.navs{
+  margin-top: 20px;
+  list-style: none;
+  padding-left: 0;
+  font-size: 13px;
+  line-height: 5px;
+}
+.navs .nav-item{
+  color: #5e5e5e;
+}
+
+.download_btn{
+  margin-top: -10px;
+  margin-left: 20px;
+  width:150px;
+  height:60px;
+  background-image: url(images/google-play-badge.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.download_btn2{
+  margin-left: 30px;
+  width:150px;
+  height:45px;
+  background-image: url(images/download-on-the-app-store-badge.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.hamburger{
+  z-index: 10;
+  padding: 0;
+  margin:15px 10px 10px 15px;
+  display:block;
+  width:15px;
+  cursor:pointer;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  background:none;
+  outline:none;
+  border:none
+}
+
+  .hamburger .bar,.hamburger:after,.hamburger:before{
+    content:'';
+    display:block;
+    width:100%;
+    height:2px;
+    background-color:#000000;
+    margin:3px 0px;
+    -webkit-transition:0.4s;
+    transition:0.4s
+  }
+
+    .hamburger.is-active:before{
+      width: 15px;
+      -webkit-transform:rotate(-45deg) translate(9px, -9px);
+      transform:rotate(-45deg) translate(-1px, 2px);
+    }
+    
+    .hamburger.is-active:after{
+      width: 15px;
+      -webkit-transform:rotate(45deg) translate(7px, -9px);
+      transform:rotate(45deg) translate(-5px, -6px);
+    }
+    .hamburger.is-active .bar{
+      opacity:0
+
+    }
+
+.button{
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  border:none;
+  outline:none;
+  background:none;
+  display:inline-block;
+  color:#FFF;
+  font-size:20px;
+  background-color:#FF9FDB;
+  padding:12px 16px;
+  border-radius:8px;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-weight:700;
+  cursor:pointer;
+}
+
+.searchbox{
+  position: relative;
+  top:2px;
+  left:35%;
+  width:370px;
+  height:30px;
+  border: 1px solid #ececec;
+  background-color: #fafafa;
+  border-radius: 30px;
+  box-sizing: border-box;
+}
+
+.searchbar{
+  box-sizing: border-box;
+  width:370px;
+  height:30px;
+  border: none;
+  padding: 9px 4px 9px 40px;
+  background: transparent url("images/5402443_search_find_magnifier_magnifying_magnifying\ glass_icon.png") no-repeat;
+  background-size: 21px;
+  background-position: center;
+  background-position-x: 15px;
+}
+
+.searchbox-content{
+  display: none;
+}
+
+.bis{
+  padding-right: 20px;
+}
+.search-btn{
+align-items: center;
+height:70px;
+padding-left: 30px;
+border-color: #8b8b8b;
+justify-content: flex-start;
+}
+.search-btn:hover{
+  color: #000000;
+  background-color:#e9e9e9;
+}
+
+.searchbox-content p{
+  color: #a0a0a0;
+  font-family: Adobe Clean;
+  padding:15px 0  0 15px;
+  font-size: 13px;
+  font-stretch: extra-expanded;
+}
+.searchbox-content ul{
+  list-style: none;
+  padding: 0;
+  
+}
+.searchbox-content ul li a{
+  padding-left: 10px;
+  height: 40px;
+  font-weight: bold;
+  font-size: 18px;
+  display: block;
+  color:#000000;
+  text-decoration: none;
+}
+.searchbox-content ul li a:hover{
+  background-color: #e6e6e6;
+}
+
+.searchbutton{
+  display: none;
+  position: absolute;
+  right: 100px;
+  top:13px;
+  background: transparent url("images/5402443_search_find_magnifier_magnifying_magnifying\ glass_icon.png") no-repeat;
+  background-size: 18px;
+  width:30px;
+  height: 30px;
+  border-radius: 30px;
+  background-position: center;
+
+}
+input::-webkit-input-placeholder {
+  font-family: Adobe Clean;
+  color: #8f8f8f;
+  font-stretch: semi-expanded;
+}
+input:focus{
+  outline: none !important;
+  background-color: white;
+  border: 1px solid #c1daff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+}
+.searchbox input:focus +*{
+  background-color: white;
+  height: 400px;
+  overflow-y: scroll;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-sizing: content-box;
+  border-width: 0px 1px 1px 1px;
+  border-style: solid;
+  border-color: #c7c7c7;
+}
+.searchbox input:focus +.searchbox-content{
+  display: block;
+}
+.icon{
+  position: absolute;
+  top:35%;
+  cursor: pointer;
+  right: 33%;
+  display: inline-block;
+}
+
+.login{
+  margin-right: 100px;
+  margin-top: 6px;
+}
+.login button {
+  cursor: pointer;
+  padding-left: 19px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 15px;
+  white-space: nowrap;
+  margin: 0 2px;
+  width: 85px;
+  height:35px;
+  transition: 0.4s;
+}
+
+.reg {
+  color: white;
+  background-color: rgb(0, 68, 255);
+}
+
+.log {
+  color: rgb(104, 85, 224);
+  background-color: rgb(232, 240, 255);
+  border: 1px solid rgb(201, 202, 233);
+}
+
+.reg:hover {
+  background-color: rgb(0, 47, 177);
+}
+
+.log:hover{
+  background-color: rgb(188, 208, 245); 
+}
+
+.line{
+  width:1.5px;
+  height:25px;
+  margin-left: 8px;
+  background-color: #dadada;
+}
+
+.trial{
+  margin-left: 10px; 
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/4c/Adobe_Creative_Cloud_rainbow_icon.svg); 
+  background-size: 20px; 
+  background-position: center; 
+  background-color: #ffffff;
+  background-position-x: 13px; 
+  border: 1px solid rgb(197, 197, 197);
+  background-repeat: no-repeat;
+  padding-left:40px;
+  padding-right: 15px;
+  border-radius: 15px;
+  font-family: Adobe Clean;
+}
+.flexheading{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.mainheading{
+  font-family: Acumin Pro Bold, sans-serif;
+  font-style:normal;
+  font-weight: 900;
+  margin-top: 15vh;
+
+  text-align: center;
+}
+
+.subheading{
+font-family: Acumin Pro, sans-serif;
+width:60%;
+font-stretch: extra-expanded;
+text-align: center;
+}
+
+.card-header{
+  box-sizing: border-box;
+  padding-top: 15px;
+  font-family: Acumin Pro;
+  font-weight: bold;
+}
+
+.card-container{
+  margin-top: 20px;
+}
+
+.card-container:hover img.img-fluid{
+  filter:brightness(40%) !important;
+}
+
+
+
+@media(max-width:400px){
+  .mainheading{
+    font-size:20px;
+  }
+  .subheading{
+    font-size: 13px;
+  }
+}
+
+footer{
+display: none;
+}
+
+.button-group{
+  padding-top: 0;
+  display: inline-flex;
+  position: absolute;
+  top:1px;
+  left:5px;
+}
+button{
+  padding:0px 20px 0px 20px;
+  line-height: 15px;
+  margin-top:10px;
+  border-width: 0 1px 0 0;
+  border-style: solid;
+  border-color: #aaa;
+  background-color: #fafafa;
+  color:rgb(141, 141, 141);
+  font-size: 12px;
+  font-family: Adobe Clean;
+  font-stretch: extra-expanded;
+  font-weight: bold;
+}
+
+.footer-nav{
+ position: relative;
+ height: fit-content;
+ top:2px;
+ bottom: 0;
+ 
+}
+
+.footer-nav .nav{
+  position: relative;
+  top:8px;
+  bottom: 0;
+  padding-bottom: 0;
+}
+.footer-nav .nav .nav-item .nav-link{
+  font-family: Adobe Clean;
+  font-stretch: extra-expanded;
+  font-size: 12px;
+  font-weight: bold;
+  color:rgb(141, 141, 141);
+  line-height: 0;
+}
+
+.footer-nav .nav .nav-item .nav-link:hover{
+  border:none;
+  color: rgb(0, 140, 255);
+}
+
+.navbar-brand img {
+  margin-bottom:4px;
+  margin-right: 3px; /* add some space between the logo and name */
+}
+
+.navbar-brand {
+  display:none;
+  position: absolute;
+  top:6px;
+  right:0;
+  box-sizing: border-box;
+  margin-right:30px;
+  font-size: 1rem;
+  font-family: Adobe Clean;
+  font-weight: bold;
+  color:#000000;
+}
+
+.header .navbar-brand{
+  top:12px;
+}
+.navbar-brand:hover{
+  color: #000000;
+  filter: opacity(50%);
+
+}
+@media(max-width:1300px){
+  .searchbox{
+    display: none;
+   }
+   .searchbutton{
+    display: block;
+    right:430px;
+    border: 1px solid #eeeeee;
+   }
+   .icon{
+    right:400px;
+   }
+   .login{
+    margin-right: 60px;
+   }
+   .navbar-brand img{
+    height:18px;
+    width:20px;
+   }
+
+}
+
+@media (min-width: 1080px){
+  footer{
+    display: block;
+    border-top: 1px solid #94949456;
+  }
+  .hamburger{
+    display:none
+  }
+  #brand-name{
+    left: 20px;
+  }
+  .navs{
+    display: none;
+  }
+  .download_btn{
+    display: none;
+  }
+  .download_btn2{
+    display: none;
+  }
+  .nav-links{
+    transform: translateX(0%);
+    transition: none;
+    flex-direction: row;
+    height:auto;
+    width:360px;
+    padding-left: 5px;
+    padding-top: 0;
+    left:105px;
+    top:15px;
+    justify-content: space-around;
+    background-color: #ff9fda00;
+  }
+  .nav-links .nav-item{
+    font-size: 15px;
+    color: #333333;
+  }
+  .nav-link:hover{
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+  }
+  
+  .active{
+    padding-bottom: 10px;
+    border-left: 0;
+    padding-left: 0;
+    border-bottom: 2px solid black;
+  }
+  .navbar-brand{
+    display: block;
+  }
+  .header .navbar-brand {
+    display:block;
+    font-size:0;
+   }
+}
+
+@media (max-width:1079px){
+  .icon{
+    right:50px;
+  }
+   .searchbutton{
+  right: 8px;
+  top:13px;
+   }
+   .navbar-brand {
+    display:none;
+   }
+   .log{
+    display:none;
+   }
+   .reg{
+    display: none;
+   }
+   .line{
+    display: none;
+   }
+   .trial{
+    display: none;
+   }
+}
+
+@media(min-width: 1300px){
+  .mainheading{
+    font-size:60px;
+  }
+  .subheading{
+    font-size: 25px;
+  }
+  .header .navbar-brand{
+    font-size: 15px;
+  }
+}
+
 }
 
 .logo{
