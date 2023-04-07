@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap 5 Website Example</title>
+  <title>For You Onboarding</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
@@ -17,25 +17,67 @@
   <a href="" class="logo">
     <h4 id="brand-name">Bēhance</h4>
   </a>
-    <ul class="nav-links">
+  <div class="header-nav" style="display: inline-block; color: black;">
+    <ul class="nav-links" >
       <li class="nav-item">
         <a class="nav-link active" href="#">For You</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Discover</a>
+        <a class="nav-link" href="https://www.behance.net/galleries?tracking_source=nav20">Discover</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Live</a>
+        <a class="nav-link" href="https://www.behance.net/live?tracking_source=nav20">Live</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Hire</a>
+        <a class="nav-link" href="https://www.behance.net/hire?tracking_source=nav20">Hire</a>
       </li>
         <li class="nav-item">  
-            <a class="nav-link" href="#">Jobs</a>
+            <a class="nav-link" href="https://www.behance.net/joblist?tracking_source=nav20">Jobs</a>
         </li>
+        <a href="" class="download_btn"></a>
+        <a href="" class="download_btn2"></a>
+        <ul class="navs">
+          <li class="nav-item"><a class="nav-link" href=""> English</a></li>
+          <li class="nav-item"><a class="nav-link" href=""> TOU</a></li>
+          <li class="nav-item"><a class="nav-link" href=""> Privacy</a></li>
+          <li class="nav-item"><a class="nav-link" href=""> Community</a></li>
+          <li class="nav-item"><a class="nav-link" href=""> Help</a></li>
+          <li class="nav-item"><a class="nav-link" href=""> Cookie preferences</a></li>
+        </ul>
+        
     </ul>
-    <div class="searchbox"><input class="searchbar" type="search" placeholder="Search..." aria-label="Search"></div>
+  </div>
+    <div class="searchbox" >
+      <input class="searchbar" type="search" placeholder="Search..." aria-label="Search">
+      <div class="searchbox-content">
+        <p> <b>SUGGESTED SEARCHES</b> </p>
+          <ul>
+            <li><a href="">portfolio</a></li>
+            <li><a href="">logo</a></li>
+            <li><a href="">infographic</a></li>
+            <li><a href="">psd</a></li>
+            <li><a href="">collage</a></li>
+          </ul>
+      </div>
+    </div>
     <div class="searchbutton"></div>
+    <img src="images/notification.png" class="icon" width="21px">
+    <span class="container d-flex justify-content-end login" display="inline-block;">
+      <div>
+        <button class="log">Log In</button>
+        <button class="reg">Sign up</button>
+      </div>
+      <span class="line"></span>
+      <a href="" role="button" class="btn btn-light trial">
+        Free Trial
+      </a>
+    </span>
+    <div class="ml-auto d-flex justify-content-end" >
+      <a class="navbar-brand" href="#">
+        <img src="images/adobe.png" alt="Brand logo" width="16px" height="13px" >
+        Adobe
+      </a>
+  </div>
 </nav>
 <div class="container-fluid" style="background-color: rgb(248, 248, 248);">
   <div class="flexheading"> 
@@ -594,20 +636,34 @@
     </div>
     
   </div>
-  <footer class="bg-light text-white py-3 fixed-bottom" style="height:5vh; box-sizing: border-box;">
-    <div class="container">
-      <div class="row">
-        <div class="btn-group" style="height:5vh; width:200px; border-radius: 0; padding-bottom: 20px; ">
-          <button class="btn btn-secondary" data-toggle="tooltip" data-template="<div><strong>Option 1</strong><br>Option 2<br>Option 3</div>" title="<div><strong>Option 1</strong><br>Option 2<br>Option 3</div>">Hover over me</button>
-        <button class="btn btn-primary" data-toggle="tooltip" data-template="<div><strong>Option 1</strong><br>Option 2<br>Option 3</div>" title="<div><strong>Option 1</strong><br>Option 2<br>Option 3</div>">Hover over me</button>
-        <button class="btn btn-primary" data-toggle="tooltip" data-template="<div><strong>Option 1</strong><br>Option 2<br>Option 3</div>" title="<div><strong>Option 1</strong><br>Option 2<br>Option 3</div>">Hover over me</button>
-        </div>
+  <footer class="bg-light text-white py-3 fixed-bottom" >
 
-
-
-        </div>
+    <div class="ml-auto d-flex justify-content-end" id="adobe">
+        <a class="navbar-brand" href="#">
+          <img src="images/adobe.png" alt="Brand logo" width="16px" height="13px" >
+          Adobe
+        </a>
+    </div>
+    
+    <div class="button-group">
+      <button id="more-behance">More Behance</button>
+      <button id="language">English</button>
+      <nav class="footer-nav">
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link" href=""> TOU</a></li>
+          <li class="nav-item"><a class="nav-link" href=""> Privacy</a></li>
+          <li class="nav-item"><a class="nav-link" href=""> Community</a></li>
+          <li class="nav-item"><a class="nav-link" href=""> Help</a></li>
+          <li class="nav-item"><a class="nav-link" href=""> Cookie preferences</a></li>
+          <li class="nav-item"><a class="nav-link" href=""> Do not sell or share my personal information</a></li>
+        </ul>
+      </nav>
+    </div>
       </div>
     </div>
+    </div>    
+    
+
   </footer>
   
 </div>
@@ -622,3 +678,4 @@
   </script>
 </body>
 </html>
+
