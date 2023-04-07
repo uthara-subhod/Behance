@@ -49,11 +49,17 @@
 .nav-active{
   transform: translateX(0%);
 }
+.nav-link{
+  padding-left: 20px;
+}
 .nav-links .nav-item{
   color: rgb(0, 102, 255);
   padding-bottom: 20px;
 }
-
+.nav-link:hover{
+  padding-bottom: 10px;
+  border-left: 2px solid black;
+}
 .active{
   border-left: 4px solid black;
 }
@@ -510,12 +516,16 @@ button{
     justify-content: space-around;
     background-color: #ff9fda00;
   }
+  .nav-link{
+    padding-left: 0;
+  }
   .nav-links .nav-item{
     font-size: 15px;
     color: #333333;
   }
   .nav-link:hover{
     padding-bottom: 10px;
+    border-left: none;
     border-bottom: 2px solid black;
   }
   
